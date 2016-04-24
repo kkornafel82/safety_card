@@ -3,9 +3,20 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Construction Safety Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    <nav class="navbar">
+      <div class="links">
+         <a ui-sref="landing" class="link">Home</a> 
+         <a ui-sref="whycsc" class="link">Why CSC?</a>
+         <a ui-sref="order" class="link">Order</a> 
+         <a ui-sref="samples" class="link">Samples</a>
+         <a ui-sref="contactus" class="link">Contact Us</a>   
+      </div>
+    </nav>
     
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
@@ -14,6 +25,7 @@
     <script src="/scripts/app.js"></script>
 
     <ui-view></ui-view>
+
 
 
 </body>
