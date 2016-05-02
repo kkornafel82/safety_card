@@ -26,18 +26,8 @@
   width: 131px;
 }
 
-.main-picture {
-  padding-top: 25px
-  height: 100px;
-  width: 100%;
-}
 
 
-.main-picture .banner{
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
 
 .navbar .links {
   display: table;
