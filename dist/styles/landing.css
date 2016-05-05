@@ -90,9 +90,9 @@ h1, p {
 
 .picture:hover {
   opacity: 1.0;
- -webkit-transition: all 100ms ease-in-out;
- -moz-transition: all 100ms ease-in-out; 
-  transition: all 100ms ease-in-out,
+ -webkit-transition: all 50ms ease-in-out;
+ -moz-transition: all 50ms ease-in-out; 
+  transition: all 50ms ease-in-out,
 }
 
 
