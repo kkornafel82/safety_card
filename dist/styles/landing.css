@@ -23,7 +23,7 @@
 }
 
 
-h1, p {
+h5, h4, h1, p {
   color: #A33A00;
   font-family: 'Arimo', sans-serif;
 }
@@ -85,7 +85,7 @@ h1, p {
   position: relative;
   height: 200px;
   width: 300px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .picture:hover {
@@ -93,6 +93,32 @@ h1, p {
  -webkit-transition: all 50ms ease-in-out;
  -moz-transition: all 50ms ease-in-out; 
   transition: all 50ms ease-in-out,
+}
+
+.sample-front {
+  position: relative;
+  left: 10px;
+  height: 200px;
+  width: 350px;
+  border: solid 2px black;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 100px;
+}
+
+.card-logo {
+  position: relative;
+  float: right;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 70px;
+}
+
+.card-text {
+  position: relative;
+  left: 5px;
+  font-size: 90%;
+  top: 12px;
 }
 
 
