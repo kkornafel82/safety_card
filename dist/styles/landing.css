@@ -103,6 +103,8 @@ h5, h4, h1, p {
   border: solid 2px black;
   box-shadow: 10px 10px 5px #888888;
   margin-bottom: 100px;
+  margin-top: 200px;
+  margin-left: 100px;
 }
 
 .card-logo {
