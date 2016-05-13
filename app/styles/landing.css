@@ -99,7 +99,7 @@ h5, h4, h1, p {
   display: inline-block;
   position: relative;
   float: left;
-  left: 200px;
+  left: 100px;
   height: 200px;
   width: 350px;
   border: solid 2px black;
@@ -115,7 +115,7 @@ h5, h4, h1, p {
   position: relative;
   clear: right;
   float: right;
-  right: 200px;
+  right: 100px;
   height: 200px;
   width: 350px;
   border: solid 2px black;
@@ -159,10 +159,11 @@ h5, h4, h1, p {
   position: relative;
   display: inline-block;
   left: 20px;
+  font-size: 90%;
   height: 80;
   width: 150;
-  border: solid 1px black;
   text-align: center;
+
 }
 
 .contact-two {
@@ -174,13 +175,11 @@ h5, h4, h1, p {
   color: black;
   height: 80;
   width: 150;
-  border: solid 1px black;
+  text-align: center;
 }
 
 .contact-one p {
-  font-size: 90%;
   color: black;
-  font-family: 'Arimo', sans-serif;
 }
 
 
