@@ -99,7 +99,7 @@ h5, h4, h1, p {
   display: inline-block;
   position: relative;
   float: left;
-  left: 100px;
+  left: 200px;
   height: 200px;
   width: 350px;
   border: solid 2px black;
@@ -115,7 +115,7 @@ h5, h4, h1, p {
   position: relative;
   clear: right;
   float: right;
-  right: 100px;
+  right: 200px;
   height: 200px;
   width: 350px;
   border: solid 2px black;
