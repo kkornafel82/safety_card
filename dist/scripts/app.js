@@ -24,6 +24,7 @@
         
         .state('order', {
             url: '/order',
+            controller: 'OrderCtrl as order',
             templateUrl: '/templates/order.html'
           })
 
@@ -39,6 +40,6 @@
  
 
  angular
-     .module('safetyCard', ['ui.router'])
+     .module('safetyCard', ['ui.router','firebase'])
      .config(config);
  })();
