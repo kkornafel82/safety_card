@@ -1,8 +1,21 @@
 
+<h1 class="order-heading">Enter Your Order Information</h1>
+<div class="order-container">
+  <img src="assets/images/man.jpg" class="order-image">
+  <form>
+    <div class="column-one">
+      <input type="text" ng-model="order.name"><p>Add Order Name</p>
+      <input type="text" ng-model="order.address"><p>Add Jobsite Address</p>
+      <input type="text" ng-model="order.safetyone"><p>Add First Safety Team Contact</p>
+    </div>
 
-<h1>Order Page</h1>
+    <div class="column-two">
+      <input type="text" ng-model="order.safetytwo"><p>Add Second Safety Team Contact</p>
+      <input type="text" ng-model="order.hospital"><p>Add Hospital Address</p>
+      <input type="text" ng-model="order.urgentcare"><p>Add Urgent Care Address</p>
+    </div>
 
-<form>
-  <input type="text" ng-model="orders">
-  <button class="md-button" ng-click="addOrder()">Add Order</button>
-</form>
+
+    <button class="md-button" ng-click="addOrder()">Submit Order</button>
+  </form>
+</div>

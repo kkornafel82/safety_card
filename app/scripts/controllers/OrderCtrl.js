@@ -4,10 +4,12 @@
      $scope.all = Orders.all;
 
      $scope.addOrder = function (){
-        console.log($scope.orderName);
-        Orders.all.$add({name: $scope.orderName, createdAt: Firebase.ServerValue.TIMESTAMP});
-        $scope.orderName = "";
+        Orders.all.$add({name: $scope.order, createdAt: Firebase.ServerValue.TIMESTAMP});
+        console.log($scope.order);
+        $scope.order = "";
      }
+
+     
 
 }
    angular
