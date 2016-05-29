@@ -10,7 +10,7 @@
   height: 300px;
   width: 400px;
   float: right;
-  right: 200px;
+  right: 150px;
   top: 0px;
 }
 
@@ -21,14 +21,24 @@
 
 .column-one {
   position: relative;
+  padding: 40px;
+  display: inline-block;
   width: 150px;
-  clear: left;
+  clear: both;
 }
 
 .column-two {
   position: relative;
+  padding-left: 25px;
+  display: inline-block;
   width: 150px;
   clear: both;
+}
+
+.md-button {
+  position: relative;
+  display: block;
+  margin-top: 50px;
 }
 
 
