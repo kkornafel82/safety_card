@@ -15,6 +15,18 @@
       <input type="text" ng-model="order.urgentcare"><p>Add Urgent Care Address</p>
     </div>
 
+    <div class="form-group">
+     <label class="control-label" for="pictures">Add Pictures</label>
+      <div class="col-md-4">
+        <input type="file" ngf-select="" ng-model="logo"  name="file"    
+          accept="image/*" ngf-max-size="2MB" ngf-multiple="true" ngf-keep="true" ngf-keep-distinct="true" class="md-button"/>
+    <!-- Show image thumb and remove option -->
+       <!-- <span ng-repeat="file in files">
+           <img ngf-thumbnail="!file.$error && file" class="thumb"> <button class="btn btn-danger" ng-click="file = null" ng-show="file">Remove</button>
+        </span> -->
+      </div>
+    </div>
+
 
     <button class="md-button" ng-click="addOrder()">Submit Order</button>
   </form>

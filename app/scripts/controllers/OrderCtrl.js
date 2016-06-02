@@ -4,7 +4,7 @@
      $scope.all = Orders.all;
 
      $scope.addOrder = function (){
-        Orders.all.$add({name: $scope.order, createdAt: Firebase.ServerValue.TIMESTAMP});
+        Orders.all.$add({order: $scope.order, createdAt: Firebase.ServerValue.TIMESTAMP});
         console.log($scope.order);
         $scope.order = "";
      }
