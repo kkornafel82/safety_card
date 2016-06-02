@@ -40,6 +40,6 @@
  
 
  angular
-     .module('safetyCard', ['ui.router','firebase'])
+     .module('safetyCard', ['ui.router','firebase', 'ngFileUpload'])
      .config(config);
  })();
