@@ -2,7 +2,7 @@
 <h1 class="order-heading">Enter Your Order Information</h1>
 <div class="order-container">
   <img src="assets/images/man.jpg" class="order-image">
-  <form>
+  <form name="myForm">
     <div class="column-one">
       <input type="text" ng-model="order.name"><p>Add Order Name</p>
       <input type="text" ng-model="order.address"><p>Add Jobsite Address</p>
@@ -18,9 +18,12 @@
     <div class="form-group">
      <label class="control-label" for="pictures">Add Logo To Your Order</label>
       <div class="col-md-4">
-        <input type="file" ngf-select="" ng-model="logo"  name="file"    
+        <input type="file" ngf-select ng-model="logo"  name="file"    
           accept="image/*" ngf-max-size="2MB" ngf-multiple="true" ngf-keep="true" ngf-keep-distinct="true" class="md-button"/>
-        <img ngf-thumbnail="file || '/thumb.jpg'">
+          <img ng-show="logo" ngf-thumbnail="logo" class="thumb">
+          <img src="{{image | ngfDataUrl}}" class="thumb">
+          <button ng-click="logo = null" ng-show="logo">Remove</button>
+        <!--<button class="md-button" ng-click="RemoveImage()">Remove Image</button> -->
         
     <!-- Show image thumb and remove option -->
        <!-- <span ng-repeat="file in files">
@@ -28,9 +31,10 @@
         </span> -->
       </div>
     </div>
-
-
     <button class="md-button" ng-click="addOrder()">Submit Order</button>
   </form>
-  <img src="{{image | ngfDataUrl}}">
+  <!--<img ngf-thumbnail="image || '/thumb.jpg'"> -->
+  <!--<img src="{{image | ngfDataUrl}}" ngf-resize="{width: 100, height: 100, quality: 1.0}"> -->
+  <!--<img ngf-thumbnail="{{image | ngfDataUrl}}"> -->
+   <!-- <img ngf-thumbnail="{{image | ngfDataUrl}}" ngf-size="{width: 10, height: 10, quality: 0.9}"> -->
 </div>

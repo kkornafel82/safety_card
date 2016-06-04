@@ -42,4 +42,12 @@
   margin-top: 50px;
 }
 
+.thumb {
+    width: 25px;
+    height: 25px;
+    float: none;
+    position: relative;
+    top: 7px;
+}
+
 
