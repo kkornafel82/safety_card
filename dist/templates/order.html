@@ -16,13 +16,15 @@
     </div>
 
     <div class="form-group">
-     <label class="control-label" for="pictures">Add Pictures</label>
+     <label class="control-label" for="pictures">Add Logo To Your Order</label>
       <div class="col-md-4">
         <input type="file" ngf-select="" ng-model="logo"  name="file"    
           accept="image/*" ngf-max-size="2MB" ngf-multiple="true" ngf-keep="true" ngf-keep-distinct="true" class="md-button"/>
+        <img ngf-thumbnail="file || '/thumb.jpg'">
+        
     <!-- Show image thumb and remove option -->
        <!-- <span ng-repeat="file in files">
-           <img ngf-thumbnail="!file.$error && file" class="thumb"> <button class="btn btn-danger" ng-click="file = null" ng-show="file">Remove</button>
+           <img ngf-thumbnail="!file.$error && file" class="thumb"> <button class="md-button" ng-click="file = null" ng-show="file">Remove</button>
         </span> -->
       </div>
     </div>
