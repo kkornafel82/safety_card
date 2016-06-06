@@ -18,12 +18,11 @@
     <div class="form-group">
      <label class="control-label" for="pictures">Add Logo To Your Order</label>
       <div class="col-md-4">
-        <input type="file" ngf-select ng-model="logo"  name="file"    
-          accept="image/*" ngf-max-size="2MB" ngf-multiple="true" ngf-keep="true" ngf-keep-distinct="true" class="md-button"/>
-          <img ng-show="logo" ngf-thumbnail="logo" class="thumb">
-          <img src="{{image | ngfDataUrl}}" class="thumb">
-          <button ng-click="logo = null" ng-show="logo">Remove</button>
-        <!--<button class="md-button" ng-click="RemoveImage()">Remove Image</button> -->
+      <input type="file" ngf-select ng-model="picFile" name="file"    
+             accept="image/*" ngf-max-size="2MB" required ngf-multiple="true"
+             ngf-model-invalid="errorFile">
+
+      <img ng-show="myForm.file.$valid" ngf-thumbnail="picFile[0]" class="thumb"> <button ng-click="picFile = null" ng-show="picFile">Remove</button>
         
     <!-- Show image thumb and remove option -->
        <!-- <span ng-repeat="file in files">
