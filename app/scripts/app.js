@@ -28,9 +28,9 @@
             templateUrl: '/templates/order.html'
           })
 
-        .state('contactus', {
-            url: '/contactus',
-            templateUrl: '/templates/contactus.html'
+        .state('pay', {
+            url: '/pay',
+            templateUrl: '/templates/pay.html'
           });
  
         $urlRouterProvider.otherwise("/landing");

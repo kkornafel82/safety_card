@@ -17,8 +17,7 @@
          <a ui-sref="landing" class="link">Home</a> 
          <a ui-sref="whycsc" class="link">Why CSC?</a>
          <a ui-sref="order" class="link">Order</a> 
-         <a ui-sref="samples" class="link">Samples</a>
-         <a ui-sref="contactus" class="link">Contact Us</a>   
+         <a ui-sref="samples" class="link">Samples</a> 
       </div>
     </nav>
     
@@ -26,10 +25,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script>Stripe.setPublishableKey('pk_test_5RiIVBBppCLhLwI0NWyS1lrk');</script>
     <script src="/scripts/ng-file-upload-all.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/OrderCtrl.js"></script>
     <script src="/scripts/services/Orders.js"></script>
+
 
 
     <ui-view></ui-view>
