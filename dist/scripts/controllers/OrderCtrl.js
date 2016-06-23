@@ -11,7 +11,21 @@
           console.log(order);
           $scope.order = "";
         });
-     }
+      }
+      
+      $scope.handleStripe = function(status, response){
+        if(response.error) {
+          // there was an error. Fix it.
+        } else {
+          debugger
+          var form = angular.element(document.querySelector('form[stripe-form]'))
+         // Get the token ID: 
+          var token = response.id; 
+         // Insert the token into the form so it gets submitted to the server: 
+          form.append(angular.element('<input type="hidden" name="stripeToken" />').val(token)); 
+         // Submit the form: 
+          form[0].submit();        }
+        }
 
      
 

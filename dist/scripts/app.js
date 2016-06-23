@@ -1,5 +1,6 @@
  (function() {
      function config($stateProvider, $locationProvider, $urlRouterProvider) {
+        window.Stripe.setPublishableKey('pk_test_5RiIVBBppCLhLwI0NWyS1lrk');
         $locationProvider
          .html5Mode({
             enabled: true,
@@ -40,6 +41,6 @@
  
 
  angular
-     .module('safetyCard', ['ui.router','firebase', 'ngFileUpload'])
+     .module('safetyCard', ['ui.router','firebase', 'ngFileUpload','angularPayments'])
      .config(config);
  })();
