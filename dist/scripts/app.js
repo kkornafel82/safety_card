@@ -30,6 +30,7 @@
 
         .state('pay', {
             url: '/pay',
+            controller: 'PayCtrl as pay',
             templateUrl: '/templates/pay.html'
           });
  

@@ -37,3 +37,10 @@
   <!--<img ngf-thumbnail="{{image | ngfDataUrl}}"> -->
    <!-- <img ngf-thumbnail="{{image | ngfDataUrl}}" ngf-size="{width: 10, height: 10, quality: 0.9}"> -->
 </div>
+
+<form stripe-form="stripeCallback">
+    <input ng-model="number" placeholder="Card Number" />
+    <input ng-model="expiry" placeholder="Expiration" />
+    <input ng-model="cvc" placeholder="CVC" />
+    <button type="submit">Submit</button>
+</form>

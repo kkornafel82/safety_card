@@ -9,20 +9,10 @@
     <script src="../lib/angular-payments.min.js"></script>
     <script>
     Stripe.setPublishableKey('pk_test_5RiIVBBppCLhLwI0NWyS1lrk')
-    angular.module('app', ['angularPayments'])
-    MainController = function($scope){
-      $scope.handleStripe = function(status, response){
-        if(response.error) {
-          // there was an error. Fix it.
-        } else {
-          // got stripe token, now charge it or smt
-          token = response.id
-        }
-      }
-    }
+    angular.module('app', ['angularPayments']
     </script>
   </head>
-  
+
   <body ng-app="safetyCard">
 
     <div class="container" ng-controller="MainController">
