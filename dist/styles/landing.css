@@ -26,7 +26,7 @@
 
 h5, h4, h1, p {
   color: #A33A00;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Glegoo', serif;
 }
 
 .name {
@@ -100,6 +100,7 @@ h5, h4, h1, p {
   display: inline-block;
   position: relative;
   float: left;
+  font-size: small;
   left: 150px;
   height: 200px;
   width: 350px;
@@ -136,24 +137,24 @@ h5, h4, h1, p {
 .card-text-header {
   position: relative;
   left: 5px;
-  font-size: 90%;
-  top: 12px;
+  font-size: 110%;
+  top: 5px;
   font-weight: 700;
 }
 
 .card-text-body {
   position: relative;
   left: 5px;
-  font-size: 72%;
-  top: 12px;
+  font-size: 50%;
+  top: 0px;
   color: black;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Glegoo', serif;
 
 }
 
 .card-text-body p {
   color: black;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Glegoo', serif;
 }
 
 .contact-one {
@@ -230,6 +231,22 @@ h5, h4, h1, p {
   text-decoration:none;
   border: none;
   outline: none;
+}
+
+.stats {
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  top: 25px;
+  clear: both;
+  left: 100px;
+}
+
+.stats ul,p {
+  font-size: 1.5em;
+  margin: auto;
+  font-family: 'Glegoo', serif;
+
 }
 
 
