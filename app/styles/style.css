@@ -1,3 +1,9 @@
+.header {
+  text-align: left;
+  margin-left: 100px;
+}
+
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -21,7 +27,7 @@
 .logo {
   position: absolute;
   top: 10px;
-  left: 30px;
+  right: 100px;
   height: 67px;
   width: 131px;
 }

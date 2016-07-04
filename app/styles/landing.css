@@ -7,7 +7,8 @@
 .main {
   position: relative;
   padding-top: 50px;
-  height: 200px;
+  border-radius: 25px;
+  height: 300px;
   width: 100%;
   background-image: url('../assets/images/Banner.jpg');
   background-repeat: no-repeat;
@@ -26,10 +27,10 @@
 
 h5, h4, h1, p {
   color: #A33A00;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Glegoo', serif;
 }
 
-.name {
+.description {
   position: relative;
   height: 75px;
   float:left;
@@ -39,12 +40,13 @@ h5, h4, h1, p {
 
 .slogan {
   position: relative;
-  float: right;
+  margin: auto;
+  font-size: 150%;
   width: 50%;
   text-align: center;
   height: 60px;
   display: block;
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 .slide-one {
@@ -137,7 +139,7 @@ h5, h4, h1, p {
   position: relative;
   left: 5px;
   font-size: 90%;
-  top: 12px;
+  top: 8px;
   font-weight: 700;
 }
 
@@ -232,6 +234,14 @@ h5, h4, h1, p {
   outline: none;
 }
 
+.stats {
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  top: 25px;
+  clear: both;
+  left: 100px;
+}
 
 
 
